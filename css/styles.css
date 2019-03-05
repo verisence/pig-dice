@@ -17,3 +17,6 @@ input[type="text"] {
   /* position: absolute; */
   /* top:57px; */
 }
+#roll2,#hold2{
+  display: none;
+}
