@@ -61,10 +61,12 @@ $(document).ready(function(){
     });
   });
   $("#hold1").click(function(){
+    reset1();
     finalScore1 += score1;
     $("#player1Final").text(finalScore1);
   })
   $("#hold2").click(function(){
+    reset2();
     finalScore2 += score2;
     $("#player2Final").text(finalScore2);
   })
