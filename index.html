@@ -3,8 +3,8 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script type="js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
     <meta charset="utf-8">
     <title></title>
   </head>
@@ -12,17 +12,47 @@
     <div class="container-fluid">
       <div class="panel panel-info" id="welcome">
         <div class="panel-heading">
-          <h1 class="panel-title">loreeeeeeeem</h1>
+          <h1 class="panel-title">PIG DICE</h1>
         </div>
-        <h2>Instructions</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <form>
-          <div class="form-group">
-            <input type="text" placeholder="PLAYER ONE" class="form-control" id="playerOne">
-            <input type="text" placeholder="PLAYER TWO" class="form-control" id="playerOne">
-            <button type="submit" class="btn btn-info" id="start">START GAME</button>
+        <div class="panel-body">
+          <h2>Instructions</h2>
+          <p>Welcome to the game of pig dice</p>
+          <p>1. The aim of the game is to find the first player that accumulates a score of 100.</p>
+          <p>2. Player One rolls the dice for as many times as they want, accumulating a the score in the process, with the catch being rolling a one and losing their turn.</p>
+          <p>3. When the player is satisfied with their score, they choose Hold and their current score is saved. The turn is passed to the next player.</p>
+          <p>4. The turn is passed until a player gets to 100 and wins.</p>
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="PLAYER ONE" class="form-control" id="playerOne">
+              <input type="text" placeholder="PLAYER TWO" class="form-control" id="playerOne">
+              <button type="submit" class="btn btn-info" id="start">START GAME</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="panel panel-info" id="game">
+        <div class="panel-heading">
+          <h1 class="panel-title">PIG DICE</h1>
+        </div>
+        <div class="panel-body" id="gameBody">
+          <h2 id="playerTurn">Player One's Turn</h2>
+          <div class="row">
+            <div class="col-sm-6">
+              <h3>Player One:<span id="player1Name"></span></h3>
+              <h3>Current Roll:<span id="player1Roll"></span></h3>
+              <h4>Current Score:<span id="player1Roll"></span></h4>
+              <button type="button" class="btn btn-info" id="roll1">ROLL</button>
+              <button type="button" class="btn btn-info" id="hide1">HOLD</button>
+            </div>
+            <div class="col-sm-6">
+              <h3>Player Two:<span id="player2Name"></span></h3>
+              <h3>Current Roll:<span id="player2Roll"></span></h3>
+              <h4>Current Score:<span id="player2Roll"></span></h4>
+              <button type="button" class="btn btn-info" id="roll2">ROLL</button>
+              <button type="button" class="btn btn-info" id="hide2">HOLD</button>
+            </div>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   </body>

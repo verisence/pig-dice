@@ -7,3 +7,13 @@ input[type="text"] {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+#game {
+  /* display: none; */
+}
+#gameBody {
+  /* position: relative; */
+}
+#playerTurn {
+  /* position: absolute; */
+  /* top:57px; */
+}

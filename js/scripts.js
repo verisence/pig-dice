@@ -1,5 +1,11 @@
+func
+
 $(document).ready(function(){
-  $("#start").click(function(){
+  // console.log("heey");
+
+  $("#start").click(function(event){
+    event.preventDefault();
     $("#welcome").hide();
+    // alert("heey");
   });
 });
