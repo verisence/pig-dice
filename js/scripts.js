@@ -11,8 +11,17 @@ function rollDice(){
 $(document).ready(function(){
   $("#start").click(function(event){
     event.preventDefault();
+    var playerOne = $("playerOne").val();
+    var playerTwo = $("playerTwo").val();
+    var gamerOne = new Gamer(playerOne);
+    var gamerTwo = new Gamer(playerTwo);
     $("#welcome").hide();
+    $("#game").show();
+
+    $("#player1Roll").click(function(){
+      
+    });
   });
 
-var playerOne = $("")
+
 });
