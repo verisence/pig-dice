@@ -8,12 +8,16 @@ function reset1(){
   $("#roll1").hide();
   $("#hold2").show();
   $("#roll2").show();
+  score2=0;
+  roll2=0;
 }
 function reset2(){
   $("#hold1").show();
   $("#roll1").show();
   $("#hold2").hide();
   $("#roll2").hide();
+  score1=0;
+  roll1=0;
 }
 var score1 = 0;
 var score2 = 0;
