@@ -12,6 +12,13 @@ In this website, two players play Pig dice in which they take turns to roll a di
 * The repo is then cloned to your local computer.
 ## Known Bugs
 No known bugs at the moment.
+## BDD
+| Input                | Behavior                                | Output                                             |
+|----------------------|-----------------------------------------|----------------------------------------------------|
+| Code from index.html | Loads the landing page                  | Shows the instructions and the name inputs         |
+| Start Game button    | Loads the dice roll page                | Displays the roll dice page to the user            |
+| Roll button          | Generates a random number for dice roll | Displays the rolled number and the sum of the turn |
+| Hold Button          | Saves the score                         | Displays final score till the game is won          |
 ## Technologies Used
 * HTML
 * JavaScript
