@@ -19,6 +19,13 @@ No known bugs at the moment.
 | Start Game button    | Loads the dice roll page                | Displays the roll dice page to the user            |
 | Roll button          | Generates a random number for dice roll | Displays the rolled number and the sum of the turn |
 | Hold Button          | Saves the score                         | Displays final score till the game is won          |
+## User Stories
+* As a user, I want to roll the dice when it's my turn to play in the game.
+* As a user, I want to see the score I get for each roll of the dice I make in the game.
+* As a user, I want to see my cumulative score for each round I play in the game. For example, if I roll the scores 2-6-3 consecutively, I should see my end score as 11.
+* As a user, I want the option to hold my score when I'm satisfied with the points I've gained in a round of playing. The game should, therefore, add my held score to my most recent cumulative score.
+* As a user, I want to be alerted when my dice rolls on number 1. This will help me know that I can't roll the dice until the alternate player takes their round.
+* As a user, I need a way to know which player has won the game, which means they have scored 100 points before the alternate player.
 ## Technologies Used
 * HTML
 * JavaScript
