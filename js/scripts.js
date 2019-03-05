@@ -41,6 +41,7 @@ $(document).ready(function(){
     $("#roll1").click(function(){
       var rollOne = rollDice();
       if(rollOne===1 ){
+        $("#player1Final").append("<p>You rolled a One</p>");
         //pass turn
         $("#playerTurn").text("Player Two's turn");
         reset1();
@@ -54,6 +55,7 @@ $(document).ready(function(){
     $("#roll2").click(function(){
       var rollTwo = rollDice();
       if(rollTwo===1){
+      $("#player2Final").append("<p>You rolled a One</p>");
       $("#playerTurn").text("Player One's turn");
         //pass turn
         reset2();

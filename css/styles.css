@@ -20,3 +20,6 @@ input[type="text"] {
 .panel{
   min-height: 550px;
 }
+.finalScore {
+  margin-bottom: 20px;
+}
