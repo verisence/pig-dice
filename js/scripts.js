@@ -4,7 +4,16 @@ function Gamer(name){
   // this.finalScore = 0;
 }
 function reset1(){
-
+  $("#hold1").hide();
+  $("#roll1").hide();
+  $("#hold2").show();
+  $("#roll2").show();
+}
+function reset2(){
+  $("#hold1").show();
+  $("#roll1").show();
+  $("#hold2").hide();
+  $("#roll2").hide();
 }
 var score1 = 0;
 var score2 = 0;
@@ -29,16 +38,26 @@ $(document).ready(function(){
 
     $("#roll1").click(function(){
       var rollOne = rollDice();
-      score1 += rollOne;
-      $("#player1Roll").text(rollOne);
-      $("#player1Score").text(score1);
+      if(rollOne===1 ){
+        //pass turn
+        reset1();
+      }else{
+        score1 += rollOne;
+        $("#player1Roll").text(rollOne);
+        $("#player1Score").text(score1);
+      }
     });
 
     $("#roll2").click(function(){
       var rollTwo = rollDice();
-      score2 += rollTwo;
-      $("#player2Roll").text(rollTwo);
-      $("#player2Score").text(score2);
+      if(rollTwo===1){
+        //pass turn
+        reset2();
+      }else{
+        score2 += rollTwo;
+        $("#player2Roll").text(rollTwo);
+        $("#player2Score").text(score2);
+      }
     });
   });
   $("#hold1").click(function(){
