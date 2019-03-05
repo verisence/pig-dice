@@ -1,6 +1,6 @@
-/* body{
-  color: #ff9900
-} */
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
 input[type="text"] {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -9,13 +9,6 @@ input[type="text"] {
 }
 #game {
   display: none;
-}
-#gameBody {
-  /* position: relative; */
-}
-#playerTurn {
-  /* position: absolute; */
-  /* top:57px; */
 }
 #roll2,#hold2{
   display: none;
