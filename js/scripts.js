@@ -1,7 +1,5 @@
 function Gamer(name){
   this.name = name;
-  // this.score = 0;
-  // this.finalScore = 0;
 }
 function reset1(){
   $("#hold1").hide();
@@ -71,11 +69,17 @@ $(document).ready(function(){
     reset1();
     finalScore1 += score1;
     $("#player1Final").text(finalScore1);
+    if(finalScore1>=100){
+      alert("1 won");
+    }
   })
   $("#hold2").click(function(){
     $("#playerTurn").text("Player One's turn");
     reset2();
     finalScore2 += score2;
     $("#player2Final").text(finalScore2);
+    if(finalScore2>=100){
+      alert("2 won");
+    }
   })
 });
