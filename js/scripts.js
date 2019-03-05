@@ -70,7 +70,8 @@ $(document).ready(function(){
     finalScore1 += score1;
     $("#player1Final").text(finalScore1);
     if(finalScore1>=100){
-      alert("1 won");
+      alert("Player One won. Click Okay to reload page.");
+      location.reload();
     }
   })
   $("#hold2").click(function(){
@@ -79,7 +80,8 @@ $(document).ready(function(){
     finalScore2 += score2;
     $("#player2Final").text(finalScore2);
     if(finalScore2>=100){
-      alert("2 won");
+      alert("Player two won. Click Okay to reload page.");
+      location.reload();
     }
   })
 });
