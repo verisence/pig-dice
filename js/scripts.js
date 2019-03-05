@@ -44,6 +44,7 @@ $(document).ready(function(){
       var rollOne = rollDice();
       if(rollOne===1 ){
         //pass turn
+        $("#playerTurn").text("Player Two's turn");
         reset1();
       }else{
         score1 += rollOne;
@@ -55,6 +56,7 @@ $(document).ready(function(){
     $("#roll2").click(function(){
       var rollTwo = rollDice();
       if(rollTwo===1){
+      $("#playerTurn").text("Player One's turn");
         //pass turn
         reset2();
       }else{
@@ -65,11 +67,13 @@ $(document).ready(function(){
     });
   });
   $("#hold1").click(function(){
+    $("#playerTurn").text("Player Two's turn");
     reset1();
     finalScore1 += score1;
     $("#player1Final").text(finalScore1);
   })
   $("#hold2").click(function(){
+    $("#playerTurn").text("Player One's turn");
     reset2();
     finalScore2 += score2;
     $("#player2Final").text(finalScore2);
